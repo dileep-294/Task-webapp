@@ -2,70 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d102caf5-8093-42bf-a605-b3ee56a63c07" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dileep/Servlet1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dileep/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/dileep/Servlet1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/dileep/Task.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Servlet1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Task.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/META-INF/maven/com.dileep/tasks-webapp/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/META-INF/maven/com.dileep/tasks-webapp/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/META-INF/war-tracker" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/InMemoryTaskRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/Servlets.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/Status.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/TaskDataBase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/TaskFileRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/TaskList.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/TaskManager.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/TaskRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/lib/jackson-annotations-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/lib/jackson-core-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/lib/jackson-databind-2.10.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/lib/json-20190722.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/lib/mysql-connector-java-5.1.48.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tasks-webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/InMemoryTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/InMemoryTaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/Servlets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/Servlets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TASKS.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TASKS.JSON" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TaskDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TaskDataBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TaskFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TaskFileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TaskList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TaskManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TaskRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/status.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/InMemoryTaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/InMemoryTaskRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/Servlets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/Servlets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/Status.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/TaskDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/TaskDataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/TaskFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/TaskFileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/TaskList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/TaskManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/TaskRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/task.class" beforeDir="false" afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/InMemoryTaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/InMemoryTaskRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Servlets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Servlets.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Status.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskDataBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskFileRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/task.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
