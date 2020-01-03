@@ -1,7 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d102caf5-8093-42bf-a605-b3ee56a63c07" name="Default Changelist" comment="" />
+    <list default="true" id="d102caf5-8093-42bf-a605-b3ee56a63c07" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dileep/Servlet1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/dileep/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dileep/Servlet1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/dileep/Task.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Servlet1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Task.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/META-INF/maven/com.dileep/tasks-webapp/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/META-INF/maven/com.dileep/tasks-webapp/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/META-INF/war-tracker" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/InMemoryTaskRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/Servlets.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/Status.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/TaskDataBase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/TaskFileRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/TaskList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/TaskManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/TaskRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/lib/jackson-annotations-2.10.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/lib/jackson-core-2.10.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/lib/jackson-databind-2.10.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/lib/json-20190722.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/lib/mysql-connector-java-5.1.48.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tasks-webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/InMemoryTaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/InMemoryTaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/Servlets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/Servlets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TASKS.JSON" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TASKS.JSON" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TaskDataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TaskDataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TaskFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TaskFileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TaskManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TaskManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/TaskRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/status.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dileep/task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dileep/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/InMemoryTaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/InMemoryTaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/Servlets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/Servlets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/TaskDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/TaskDataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/TaskFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/TaskFileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/TaskList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/TaskManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/dileep/TaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/dileep/task.class" beforeDir="false" afterPath="$PROJECT_DIR$/tasks-webapp/WEB-INF/classes/com/dileep/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/InMemoryTaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/InMemoryTaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Servlets.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Servlets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Status.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/Status.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskDataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskDataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskFileRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskFileRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/TaskRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/classes/com/dileep/task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/tasks-webapp/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +79,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +90,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1Vh0PYySBnjKZLFPCvmiBYnurcg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,10 +98,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.splitter.proportion" value="0.27565983" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -45,7 +118,7 @@
       <module name="tasks-webapp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.dileep.task" />
+          <option name="PATTERN" value="com.dileep.Task" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,22 +170,42 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="437" y="100" width="548" height="592" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1577767082332" />
-    <state width="1253" height="216" key="GridCell.Tab.0.bottom" timestamp="1577711090519">
+    <state x="211" y="27" width="1000" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1577944445713">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="216" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1577711090519" />
-    <state width="1253" height="216" key="GridCell.Tab.0.center" timestamp="1577711090518">
+    <state x="211" y="27" width="1000" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1577944445713" />
+    <state x="451" y="252" width="520" height="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1577958533115">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="216" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1577711090518" />
-    <state width="1253" height="216" key="GridCell.Tab.0.left" timestamp="1577711090517">
+    <state x="451" y="252" width="520" height="288" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/67.27.1299.741@67.27.1299.741" timestamp="1577958533115" />
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577944733595">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="216" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1577711090517" />
-    <state width="1253" height="216" key="GridCell.Tab.0.right" timestamp="1577711090518">
+    <state x="499" y="154" width="424" height="484" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1577944733595" />
+    <state width="1253" height="2" key="GridCell.Tab.0.bottom" timestamp="1577951940126">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="216" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1577711090518" />
+    <state width="1253" height="2" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1577951940126" />
+    <state width="1253" height="2" key="GridCell.Tab.0.center" timestamp="1577951940125">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="2" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1577951940125" />
+    <state width="1253" height="2" key="GridCell.Tab.0.left" timestamp="1577951940124">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="2" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1577951940124" />
+    <state width="1253" height="2" key="GridCell.Tab.0.right" timestamp="1577951940125">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="2" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1577951940125" />
+    <state x="199" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1577958586070">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="199" y="27" width="1024" height="741" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1577958586070" />
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1577785273639">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="372" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1577785273639" />
     <state x="67" y="100" width="1289" height="592" key="new project wizard" timestamp="1577696621877">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

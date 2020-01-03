@@ -7,73 +7,72 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class InMemoryTaskRepository implements TaskRepository{
-    ArrayList<task> taskList=new ArrayList<task>();
+public class InMemoryTaskRepository implements TaskRepository {
+    List<Task> taskList = new ArrayList<Task>();
 
-
-    public void addTask(task task){
+    public void addTask(Task task) {
         taskList.add(task);
     }
 
-    public List<task> display(){
+    public List<Task> display() {
         return taskList;
     }
 
-    public void delete(int taskId){
-        //try {
-        //System.out.println("Entered to Inmemory");
-            for (com.dileep.task task : taskList) {
-                if (task.getTaskId() == taskId) {
-                    taskList.remove(task);
-                }
-            //}
-        } /*catch (Exception e) {
-            e.printStackTrace();
-        }*/
+    public boolean delete(int taskId) {
+
+        for (Task task : taskList) {
+            if (task.getTaskId() == taskId) {
+                taskList.remove(task);
+                return true;
+            }
+        }
+        return false;
     }
 
-    public task searchByTaskId(int taskId){
-        for(com.dileep.task task:taskList) if (task.getTaskId() == taskId) return task;
+    public Task searchByTaskId(int taskId) {
+        for (Task task : taskList) if (task.getTaskId() == taskId) return task;
         return null;
     }
 
-    public List<task>  listByStatus(Status status){
-        ArrayList<task>tempTaskList = new ArrayList<>();
-        for(com.dileep.task task:taskList){
-            if(task.getStatus().equals(status))
+    public List<Task> listByStatus(Status status) {
+        ArrayList<Task> tempTaskList = new ArrayList<>();
+        for (Task task : taskList) {
+            if (task.getStatus().equals(status))
                 tempTaskList.add(task);
         }
         return tempTaskList;
     }
 
-    public void updateStatus(Status status, int taskId){
-        for(com.dileep.task task:taskList){
-            if(task.getTaskId()==taskId){
+    public void updateStatus(Status status, int taskId) {
+        for (Task task : taskList) {
+            if (task.getTaskId() == taskId) {
                 task.setStatus(status);
             }
         }
     }
-    public int getTotalCount(){
+
+    public int getTotalCount() {
         return taskList.size();
     }
-    public List<task> getPendingTasks(){
-        List<task> taskList1 = new ArrayList<>();
-        for(com.dileep.task task : taskList){
-            if(task.getStatus().equals(Status.valueOf("Created")) || task.getStatus().equals(Status.valueOf("InProgress"))){
+
+    public List<Task> getPendingTasks() {
+        List<Task> taskList1 = new ArrayList<>();
+        for (Task task : taskList) {
+            if (task.getStatus().equals(Status.valueOf("Created")) || task.getStatus().equals(Status.valueOf("InProgress"))) {
                 taskList1.add(task);
             }
         }
         return taskList1;
     }
 
-    public List<task> getTodaysTasks(){
-        List<task> todaysTasks = new ArrayList<>();
+    public List<Task> getTodayTasks() {
+        List<Task> todaysTasks = new ArrayList<>();
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
         String today = dateFormat.format(date);
-        for(com.dileep.task task : taskList){
+        for (Task task : taskList) {
             try {
-                if(task.getDueDate().equals(dateFormat.parse(today))){
+                if (task.getDueDate().equals(dateFormat.parse(today))) {
                     todaysTasks.add(task);
                 }
             } catch (ParseException e) {

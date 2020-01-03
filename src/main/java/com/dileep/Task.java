@@ -2,12 +2,12 @@ package com.dileep;
 
 import java.util.Date;
 
-public class task implements Comparable<task> {
+public class Task implements Comparable<Task> {
     public int getTaskId() {
         return taskId;
     }
 
-    public task(){
+    public Task() {
 
     }
 
@@ -58,7 +58,7 @@ public class task implements Comparable<task> {
         this.status = st;
     }
 
-    public task(int taskId, String name, String description, Date date, Status status) {
+    public Task(int taskId, String name, String description, Date date, Status status) {
         this.taskId = taskId;
         this.name = name;
         this.description = description;
@@ -71,16 +71,26 @@ public class task implements Comparable<task> {
     public String toString() {
         return (
                 " taskId : " + taskId +
-                " name : " + name +
-                " description : " + description +
-                " dueDate : " + dueDate +
-                " status : " + status);
+                        " name : " + name +
+                        " description : " + description +
+                        " dueDate : " + dueDate +
+                        " status : " + status);
     }
 
     @Override
-    public int compareTo(task task) {
-        if(this.getDueDate().compareTo(task.getDueDate())==0) return 0;
-        else if(this.getDueDate().compareTo(getDueDate())<0) return -1;
-        else return 1;
+    public int compareTo(Task task) {
+        if (this.getDueDate().compareTo(task.getDueDate()) == 0) {
+            if (this.getStatus().equals(Status.valueOf("InProgress")))
+                return -1;
+            if (this.getStatus().equals(Status.valueOf("Created")))
+                return 1;
+        } else {
+            if (this.getDueDate().compareTo(getDueDate()) < 0) {
+                return -1;
+            } else {
+                return 1;
+            }
+        }
+        return 0;
     }
 }

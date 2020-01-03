@@ -16,4 +16,14 @@
     <servlet-name>Servlets</servlet-name>
     <url-pattern>/Tasks</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>HelloWorld</display-name>
+    <servlet-name>Servlet1</servlet-name>
+    <servlet-class>com.dileep.Servlet1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet1</servlet-name>
+    <url-pattern>/taskId</url-pattern>
+  </servlet-mapping>
 </web-app>

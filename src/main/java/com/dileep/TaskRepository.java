@@ -3,21 +3,21 @@ package com.dileep;
 import java.util.List;
 
 public interface TaskRepository {
-    void addTask(task task);
+    void addTask(Task task);
 
-    List<task> display();
+    List<Task> display();
 
-    void delete(int taskId);
+    boolean delete(int taskId);
 
-    task searchByTaskId(int taskId);
+    Task searchByTaskId(int taskId);
 
-    List<task>  listByStatus(Status status);
+    List<Task> listByStatus(Status status);
 
     void updateStatus(Status status, int taskId);
 
     int getTotalCount();
 
-    List<task> getPendingTasks();
+    List<Task> getPendingTasks();
 
-    List<task> getTodaysTasks();
+    List<Task> getTodayTasks();
 }

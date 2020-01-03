@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class TaskDataBase implements TaskRepository{
+public class TaskDataBase implements TaskRepository {
 
     String url;
     String username;
@@ -15,7 +15,7 @@ public class TaskDataBase implements TaskRepository{
     private static Connection con;
     private static Statement stmt;
 
-    public TaskDataBase(){
+    public TaskDataBase() {
 
         try {
             getConnection();
@@ -28,7 +28,7 @@ public class TaskDataBase implements TaskRepository{
 
         url = "jdbc:mysql://localhost:3306/taskdb";
 
-        username ="dileep";
+        username = "dileep";
 
         password = "Dileep@123";
         try {
@@ -36,12 +36,12 @@ public class TaskDataBase implements TaskRepository{
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
-        con=DriverManager.getConnection(url,username,password);
+        con = DriverManager.getConnection(url, username, password);
 
     }
 
     @Override
-    public void addTask(task task){
+    public void addTask(Task task) {
 
         try {
             stmt = con.createStatement();
@@ -49,35 +49,35 @@ public class TaskDataBase implements TaskRepository{
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             String currentDate = simpleDateFormat.format(task.getDueDate());
 
-            String q="insert into task values("+task.getTaskId()+",\""+task.getName()+"\",\""+task.getDescription()+"\",\""+task.getStatus()
-                    +"\",\""+currentDate+"\")";
-           // System.out.println(q);
+            String q = "insert into task values(" + task.getTaskId() + ",\"" + task.getName() + "\",\"" + task.getDescription() + "\",\"" + task.getStatus()
+                    + "\",\"" + currentDate + "\")";
+            // System.out.println(q);
 
             stmt.executeUpdate(q);
-        }
-
-        catch (SQLException e) {
-            e.printStackTrace();
-        }
-        }
-
-    @Override
-    public void delete(int taskID){
-        try {
-
-            stmt = con.createStatement();
-
-            stmt.executeUpdate("DELETE FROM task WHERE taskId="+taskID);
-
-        }
-
-        catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
 
     @Override
-    public List<task> display() {
+    public boolean delete(int taskID) {
+        int totalBefore, totalAfter;
+        totalBefore = getTotalCount();
+        try {
+
+            stmt = con.createStatement();
+
+            stmt.executeUpdate("DELETE FROM task WHERE taskId=" + taskID);
+            totalAfter = getTotalCount();
+            if (totalBefore == totalAfter) return false;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return true;
+    }
+
+    @Override
+    public List<Task> display() {
         try {
 
             stmt = con.createStatement();
@@ -86,48 +86,46 @@ public class TaskDataBase implements TaskRepository{
 
             return createTaskList(rs);
 
-        }
-
-        catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
         return null;
     }
 
-    private List<task> createTaskList(ResultSet rs){
+    private List<Task> createTaskList(ResultSet rs) {
 
-        List<task> taskList = new ArrayList<>();
+        List<Task> taskList = new ArrayList<>();
 
-            try {
-                while(rs.next()){
-                    task task = new task();
-                    task.setTaskId(rs.getInt(1));
-                    task.setName(rs.getString(2));
-                    task.setDescription(rs.getString(3));
-                    task.setStatus(Status.valueOf(rs.getString(4)));
-                    task.setDueDate(rs.getDate(5));
-                     taskList.add(task);
-                }
-                return taskList;
+        try {
+            while (rs.next()) {
+                Task task = new Task();
+                task.setTaskId(rs.getInt(1));
+                task.setName(rs.getString(2));
+                task.setDescription(rs.getString(3));
+                task.setStatus(Status.valueOf(rs.getString(4)));
+                task.setDueDate(rs.getDate(5));
+                taskList.add(task);
             }
 
-            catch (SQLException e) {
-                e.printStackTrace();
-            }
+            return taskList;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
 
-            return null;
+        return null;
     }
 
     @Override
-    public task searchByTaskId(int taskId){
+    public Task searchByTaskId(int taskId) {
+        Task task = new Task();
         try {
             stmt = con.createStatement();
 
             ResultSet rs = stmt.executeQuery("select * from task where taskId=" + taskId);
 
             if (rs.next()) {
-                task task = new task();
+
                 task.setTaskId(rs.getInt(1));
                 task.setName(rs.getString(2));
                 task.setDescription(rs.getString(3));
@@ -136,9 +134,23 @@ public class TaskDataBase implements TaskRepository{
                 //System.out.println(task);
                 return task;
             }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
+        return null;
+    }
 
-        catch (SQLException e) {
+    @Override
+    public List<Task> listByStatus(Status status) {
+        try {
+            stmt = con.createStatement();
+
+            System.out.println("select * from task where status=" + status);
+
+            ResultSet rs = stmt.executeQuery("select * from task where status='" + status + "'");
+
+            return createTaskList(rs);
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
@@ -146,34 +158,13 @@ public class TaskDataBase implements TaskRepository{
     }
 
     @Override
-    public List<task> listByStatus(Status status) {
-        try {
-            stmt = con.createStatement();
-
-            System.out.println("select * from task where status="+ status);
-
-            ResultSet rs = stmt.executeQuery("select * from task where status='"+status+"'");
-
-           return createTaskList(rs);
-        }
-
-        catch (SQLException e) {
-            e.printStackTrace();
-        }
-
-        return null;
-    }
-
-    @Override
-    public void updateStatus(Status status, int taskId){
+    public void updateStatus(Status status, int taskId) {
 
         try {
             stmt = con.createStatement();
 
-            stmt.executeUpdate("UPDATE task SET status='"+status+"' WHERE taskId="+taskId);
-        }
-
-        catch (SQLException e) {
+            stmt.executeUpdate("UPDATE task SET status='" + status + "' WHERE taskId=" + taskId);
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
@@ -181,22 +172,20 @@ public class TaskDataBase implements TaskRepository{
     @Override
     public int getTotalCount() {
 
-        int total=0;
+        int total = 0;
 
         try {
             stmt = con.createStatement();
 
             ResultSet rs = stmt.executeQuery("select count(*) from task");
 
-            if(rs.next()){
+            if (rs.next()) {
                 total = rs.getInt(1);
             }
 
             return total;
 
-        }
-
-        catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
 
@@ -204,7 +193,7 @@ public class TaskDataBase implements TaskRepository{
     }
 
     @Override
-    public List<task> getPendingTasks() {
+    public List<Task> getPendingTasks() {
 
         try {
             stmt = con.createStatement();
@@ -212,19 +201,18 @@ public class TaskDataBase implements TaskRepository{
             String status = "Done";
 
             //System.out.println("select * from task where status='"+status1+"' OR status='"+status2+"'");
-            ResultSet rs = stmt.executeQuery("select * from task where not status='"+status+"' ORDER BY dueDate ASC");
+            ResultSet rs = stmt.executeQuery("select * from task where not status='" + status + "' ORDER BY dueDate ASC");
 
             return createTaskList(rs);
 
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return null;
     }
 
     @Override
-    public List<task> getTodaysTasks() {
+    public List<Task> getTodayTasks() {
 
         try {
 
@@ -236,13 +224,12 @@ public class TaskDataBase implements TaskRepository{
 
             stmt = con.createStatement();
 
-           // System.out.println("select * from task where dueDate="+today);
-            ResultSet rs = stmt.executeQuery("select * from task where dueDate='"+today+"'");
+            // System.out.println("select * from task where dueDate="+today);
+            ResultSet rs = stmt.executeQuery("select * from task where dueDate='" + today + "'");
 
             return createTaskList(rs);
 
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
 
             e.printStackTrace();
         }
